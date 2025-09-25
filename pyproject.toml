@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini-grounding"
+version = "0.1.0"
+description = "Grounded Gemini queries with citation extraction and redirect resolution"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{ name = "Your Name", email = "you@example.com" }]
+keywords = ["gemini", "grounding", "citations", "google", "llm"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+]
+
+dependencies = [
+  "google-genai>=0.3.0",
+  "requests>=2.31.0",
+  "tqdm>=4.66.0",
+]
+
+[project.urls]
+Homepage = "https://example.com/your-repo"
+Issues = "https://example.com/your-repo/issues"
+
+[project.scripts]
+gemini-ground = "gemini_grounding.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
