@@ -2,9 +2,22 @@
 
 Grounded Gemini queries with citation extraction and redirect resolution.
 
-## Install (local)
+## Install (linux)
 
 ```bash
+git clone https://github.com/darshxm/google-search-with-gemini.git
+cd google-search-with-gemini
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+## Install (Windows)
+
+```bash
+git clone https://github.com/darshxm/google-search-with-gemini.git
+cd google-search-with-gemini
+python -m venv .venv
+.venv/Scripts/activate
 pip install -e .
 ```
 
